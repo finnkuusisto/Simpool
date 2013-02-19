@@ -1,0 +1,12 @@
+About
+-----
+Simpool is a simple object pooling system for Java.  There is some debate over
+the use of object pooling for languages like Java, but I'll leave that up to
+you.  I really just made this because I had an hour of free time and had a
+programming itch to scratch.
+
+License
+-------
+Simpool is licensed under the BSD 2-Clause license. A copy of the license can be
+found in the header of every source file as well as in the LICENSE file included
+with the Simpool.
