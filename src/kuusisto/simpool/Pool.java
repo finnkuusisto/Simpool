@@ -138,10 +138,10 @@ public class Pool<T extends Poolable> {
 	}
 	
 	/**
-	 * Give a instance to the Pool.  This should normally be done with instances
-	 * that were originally retrieved from the Pool, but may be done with
-	 * instances allocated elsewhere.  This can allow you to overfill the Pool
-	 * past the maximum allocation limit.
+	 * Give an instance to the Pool.  This should normally be done with
+	 * instances that were originally retrieved from the Pool, but may be done
+	 * with instances allocated elsewhere.  This can allow you to overfill the
+	 * Pool past the maximum allocation limit.
 	 * @param object the instance to return to the pool (will be reset)
 	 */
 	public void give(T object) {
