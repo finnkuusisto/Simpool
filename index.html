@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Simpool : Simple object pooling for Java" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Simpool</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/finnkuusisto/Simpool">View on GitHub</a>
+
+          <h1 id="project_title">Simpool</h1>
+          <h2 id="project_tagline">Simple object pooling for Java</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/finnkuusisto/Simpool/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/finnkuusisto/Simpool/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>About</h2>
+
+<p>Simpool is a simple object pooling library for Java.  There is some debate over
+the use of object pooling for languages like Java, but I'll leave that up to
+you.  I really just made this because I had an hour of free time and had a
+programming itch to scratch.</p>
+
+<h2>License</h2>
+
+<p>Simpool is licensed under the BSD 2-Clause license. A copy of the license can be
+found in the header of every source file as well as in the LICENSE file included
+with the Simpool.</p>
+
+<h2>Using Simpool</h2>
+
+<p>There are 3 classes you need to understand in order to use Simpool. Poolable is
+an abstraction for the type that you want to pool.  PoolableFactory is an
+abstraction for instantiation of the type that you want to pool.  Pool is type
+that actually manages the pooling of objects.</p>
+
+<h4>Poolable</h4>
+
+<p>Any type that you want to pool must implement the Poolable interface.  It is a
+minimal interface that only requires implementation of the reset() method, which
+is called when an instance is returned to a Pool.</p>
+
+<h4>PoolableFactory</h4>
+
+<p>For any type that you want to pool you must also provide a class that implements
+the PoolableFactory interface.  It is a minimal interface that only requires
+implementation of the create() method, which is used by a Pool whenever another
+instance of the pooled type must be created.</p>
+
+<h4>Pool</h4>
+
+<p>The Pool class manages the actual pooling of objects.  You construct one with a
+PoolableFactory for the type you want to pool.  You can optionally specify a
+starting size of the pool as well as a maximum number of allocations that the
+Pool is allowed to make.</p>
+
+<h2>Javadocs</h2>
+
+<p>See the Javadocs for more details.</p>
+
+<p><a href="http://finnkuusisto.github.com/Simpool/doc">http://finnkuusisto.github.com/Simpool/doc</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Simpool maintained by <a href="https://github.com/finnkuusisto">finnkuusisto</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
