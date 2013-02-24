@@ -5,6 +5,11 @@ the use of object pooling for languages like Java, but I'll leave that up to
 you.  I really just made this because I had an hour of free time and had a
 programming itch to scratch.
 
+Releases
+--------
+If you would just like to download the jar file, see the releases page:
+http://finnkuusisto.github.com/Simpool/releases
+
 License
 -------
 Simpool is licensed under the BSD 2-Clause license. A copy of the license can be
